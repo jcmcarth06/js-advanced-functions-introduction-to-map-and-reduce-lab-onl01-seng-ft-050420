@@ -29,12 +29,22 @@ const reduceToTotal = (arr, start = 0) => {
   return value;
 };
 
-const reducetoAllTrue = arr => {
-  let bool = true;
-  arr.forEach( e => {
-    if (!e) {
-      bool = false;
-    }
-  })
-  return bool;
-};
+const reduceToAllTrue = arr => {
+    let bool = true;
+    arr.forEach( e => {
+        if (!e) {
+            bool = false;
+        }
+    })
+    return bool;
+}
+
+const reduceToAnyTrue = arr => {
+    let bool = false;
+    arr.forEach( e => {
+        if (e) {
+            bool = true;
+        }
+    })
+    return bool;
+}
