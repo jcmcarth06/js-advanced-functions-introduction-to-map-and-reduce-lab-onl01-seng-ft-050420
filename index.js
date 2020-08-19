@@ -28,3 +28,13 @@ const reduceToTotal = (arr, start = 0) => {
   arr.forEach( e => value += e);
   return value;
 };
+
+const reducetoAllTrue =arr => {
+  let bool = true;
+  arr.forEach( e => {
+    if (!e) {
+      bool = false;
+    }
+  })
+  return bool;
+};
