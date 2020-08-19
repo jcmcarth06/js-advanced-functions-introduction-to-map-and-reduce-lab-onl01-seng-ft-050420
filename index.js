@@ -10,3 +10,9 @@ const mapToNoChange = arr => {
   arr.forEach( e => newArr.push(e));
   return newArr;
 };
+
+const mapToDouble = arr => {
+  let newArr = [];
+  arr.forEach( e => newArr.push(e * 2));
+  return newArr;
+};
