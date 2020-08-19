@@ -29,7 +29,7 @@ const reduceToTotal = (arr, start = 0) => {
   return value;
 };
 
-const reducetoAllTrue =arr => {
+const reducetoAllTrue = arr => {
   let bool = true;
   arr.forEach( e => {
     if (!e) {
