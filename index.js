@@ -22,3 +22,9 @@ const mapToSquare = arr => {
   arr.forEach( e => newArr.push(e * e));
   return newArr;
 };
+
+const reduceToTotal = (arr, start = 0) => {
+  let value = start;
+  arr.forEach( e => value += e);
+  return value;
+};
